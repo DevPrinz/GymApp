@@ -7,6 +7,8 @@ public class ApiConstants {
 	public static final String MATCHES_PATH = API_V1 + "/matches";
 	public static final String AI_COACH_PATH = API_V1 + "/coach";
 	public static final String NUTRITION_PATH = API_V1 + "/nutrition";
+	public static final String USERS_PATH = API_V1 + "/users";
+
 	
 	
 	public static final String STARVA_WEBHOOK_PATH = "/starva/webhook";
