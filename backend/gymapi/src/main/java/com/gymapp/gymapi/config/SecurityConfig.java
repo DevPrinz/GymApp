@@ -18,9 +18,11 @@ import com.gymapp.gymapi.Constatnts.Constants;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-
+	
+// Reads the JWKS URL from application.properties
     @Value("${spring.security.oauth2.resourceserver.jwt.jwk-set-uri}")
     private String jwkSetUri;
+    
 
     private static final String[] PUBLIC_PATHS = {
             "/api",
@@ -35,8 +37,8 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(PUBLIC_PATHS).permitAll()
-                        .anyRequest().authenticated())
+                        .requestMatchers(PUBLIC_PATHS).permitAll() // permits access to api path within the PUBLIC_PATHS without token
+                        .anyRequest().authenticated()) // any other request require a valid jwt
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> jwt.jwtAuthenticationConverter(jwtAuthenticationConverter())));
         return http.build();
     }

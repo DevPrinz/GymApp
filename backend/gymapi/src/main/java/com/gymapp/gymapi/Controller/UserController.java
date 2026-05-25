@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.gymapp.gymapi.Constatnts.ApiConstants;
 import com.gymapp.gymapi.Service.UserService;
-import com.gymapp.gymapi.dto.request.UserSyncRequest;
+import com.gymapp.gymapi.dto.request.UserUpdateRequest;
 import com.gymapp.gymapi.dto.response.UserResponse;
 import com.gymapp.gymapi.util.AuthUtil;
 
@@ -25,7 +25,7 @@ public class UserController {
 	private final AuthUtil authUtil;	
 	
 	@PostMapping("/me")
-	public ResponseEntity<UserResponse>syncUser(@RequestBody UserSyncRequest request){
+	public ResponseEntity<UserResponse>syncUser(@RequestBody UserUpdateRequest request){
 		UUID supabaseId = authUtil.getCurrentUserId();
 		String email = authUtil.getCurrentUserEmail();
 		UserResponse response = userService.upsertUser(supabaseId, email, request);
@@ -37,5 +37,11 @@ public class UserController {
 		UUID supabaseId = authUtil.getCurrentUserId();
 		return ResponseEntity.ok(userService.getBySupabaseId(supabaseId));
 	}
+	
+//	@PostMapping("/create")
+//	public ResponseEntity<UserResponse>createProfile(){
+//		
+//	}
+	
 
 }

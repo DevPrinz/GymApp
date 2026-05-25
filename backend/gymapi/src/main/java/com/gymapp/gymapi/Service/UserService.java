@@ -4,7 +4,7 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.gymapp.gymapi.dto.request.UserSyncRequest;
+import com.gymapp.gymapi.dto.request.UserUpdateRequest;
 import com.gymapp.gymapi.dto.response.UserResponse;
 import com.gymapp.gymapi.model.User;
 import com.gymapp.gymapi.model.enums.SubscriptionTier;
@@ -18,7 +18,7 @@ public class UserService {
 	
 	private final UserRepository userRepository; 
 	
-	public UserResponse upsertUser(UUID supabaseId, String email, UserSyncRequest request) {
+	public UserResponse upsertUser(UUID supabaseId, String email, UserUpdateRequest request) {
 		User user = userRepository.findBySupabaseId(supabaseId).orElse(User.builder()
 				.supabaseId(supabaseId).email(email).subscriptionTier(SubscriptionTier.FREE).build());
 		
