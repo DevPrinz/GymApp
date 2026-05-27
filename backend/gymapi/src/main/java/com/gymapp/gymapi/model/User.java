@@ -95,4 +95,10 @@ public class User {
     @Column(name = "profile_complete")
     @Builder.Default
     private Boolean profileComplete = false; //set to true if profile has been completed
+    
+    @Column(name = "updated_at")
+    @Builder.Default
+    private Instant updatedAt = Instant.now();
+
+
 }

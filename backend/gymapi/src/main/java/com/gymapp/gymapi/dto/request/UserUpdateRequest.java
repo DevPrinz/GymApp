@@ -1,5 +1,7 @@
 package com.gymapp.gymapi.dto.request;
 
+import java.time.LocalDate;
+
 import com.gymapp.gymapi.model.enums.FitnessGoal;
 import com.gymapp.gymapi.model.enums.Gender;
 import com.gymapp.gymapi.model.enums.GymPreference;
@@ -19,4 +21,5 @@ public class UserUpdateRequest {
     private GymPreference gymPreference;
     private Integer yearsOfExperence;
     private String parkrunAthleteId;
+    private LocalDate dateOfBirth;
 }
