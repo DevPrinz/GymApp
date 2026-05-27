@@ -1,0 +1,64 @@
+# === SECRETS — never commit these ===
+*.env
+.env.*
+application-secrets.properties
+application-local.properties
+**/secrets/
+
+# === Eclipse / STS ===
+.metadata/
+.recommenders/
+.settings/
+.project
+.classpath
+.factorypath
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# === IntelliJ (in case you switch IDEs) ===
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# === VS Code ===
+.vscode/
+
+# === Maven ===
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# === Gradle (just in case) ===
+.gradle/
+build/
+
+# === Spring Boot ===
+*.class
+*.jar
+*.war
+HELP.md
+
+# === Logs ===
+*.log
+logs/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Node (if you add a frontend later) ===
+node_modules/
+npm-debug.log*
+.pnpm-debug.log*
+dist/
