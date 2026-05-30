@@ -7,7 +7,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Component;
 
-import com.gymapp.gymapi.Constatnts.Constants;
+import com.gymapp.gymapi.Constants.Constants;
 
 @Component
 public class AuthUtil {

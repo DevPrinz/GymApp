@@ -1,4 +1,4 @@
-package com.gymapp.gymapi.Constatnts;
+package com.gymapp.gymapi.Constants;
 
 public class RedisKeyConstants {
     public static final String SWIPE_COUNTER_PREFIX      = "swipes:user:";

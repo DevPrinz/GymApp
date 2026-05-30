@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gymapp.gymapi.Constatnts.ApiConstants;
+import com.gymapp.gymapi.Constants.ApiConstants;
 import com.gymapp.gymapi.dto.request.SessionRequest;
 import com.gymapp.gymapi.dto.response.SessionResponse;
 

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gymapp.gymapi.Constatnts.ApiConstants;
+import com.gymapp.gymapi.Constants.ApiConstants;
 import com.gymapp.gymapi.dto.request.NutritionLogRequest;
 import com.gymapp.gymapi.dto.response.NutritionLogResponse;
 

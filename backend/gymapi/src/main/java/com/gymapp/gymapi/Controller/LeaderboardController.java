@@ -1,6 +1,6 @@
 package com.gymapp.gymapi.Controller;
 
-import com.gymapp.gymapi.Constatnts.AppRulesConstants;
+import com.gymapp.gymapi.Constants.AppRulesConstants;
 import com.gymapp.gymapi.dto.response.LeaderboardEntryDto;
 import com.gymapp.gymapi.dto.response.LeaderboardResponse;
 import com.gymapp.gymapi.model.enums.LeaderboardCategory;

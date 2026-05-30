@@ -1,4 +1,4 @@
-package com.gymapp.gymapi.Constatnts;
+package com.gymapp.gymapi.Constants;
 
 public class ApiConstants {
 	

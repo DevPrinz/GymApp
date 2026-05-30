@@ -1,4 +1,4 @@
-package com.gymapp.gymapi.Constatnts;
+package com.gymapp.gymapi.Constants;
 
 public class Constants {
 	public static final String USER_ROLE_PRIFIX = "ROLE_";

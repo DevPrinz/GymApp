@@ -1,7 +1,7 @@
 package com.gymapp.gymapi.Controller;
 
-import com.gymapp.gymapi.Constatnts.ApiConstants;
-import com.gymapp.gymapi.Constatnts.AppRulesConstants;
+import com.gymapp.gymapi.Constants.ApiConstants;
+import com.gymapp.gymapi.Constants.AppRulesConstants;
 import com.gymapp.gymapi.dto.request.CoachMessageRequest;
 import com.gymapp.gymapi.dto.response.CoachMessageResponse;
 

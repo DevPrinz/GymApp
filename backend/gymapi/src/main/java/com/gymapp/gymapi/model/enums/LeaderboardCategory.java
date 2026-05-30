@@ -1,6 +1,6 @@
 package com.gymapp.gymapi.model.enums;
 
-import com.gymapp.gymapi.Constatnts.RedisKeyConstants;
+import com.gymapp.gymapi.Constants.RedisKeyConstants;
 
 public enum LeaderboardCategory {
     BIKE(RedisKeyConstants.LEADERBOARD_BIKE_KEY),
